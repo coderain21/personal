@@ -4,9 +4,6 @@ My portfolio website show-casing my skillset, favourite projects and certificate
 Please leave a ⭐ if you like it.
 
 ## Try It Out
-My portfolio website is live [here](https://tijan.dev/).
-
-If you find any **errors** ⛔, please report them to [errors@tijan.dev](mailto:errors@tijan.dev) thanks 🙏.
 
 ## Technologies
 For this project I used:
@@ -14,11 +11,7 @@ For this project I used:
 - [TypeScript](https://www.typescriptlang.org/) and [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 
 ## About Me
-Hi! 👋 I'm Tijan, passionate **blockchain developer** from Slovenia. Take a look at my [portfolio](https://tijan.dev).
-
-You can get in touch with me through my [website](https://tijan.dev) or contact me on [twitter](https://twitter.com/0xTijan).
-
-Do you like my work? You can support me by donating to this address: 0xC4C6A0bc6648a4F343bd86D7C48C9967530fbB48
+Hi! 👋 I'm Code rain, passionate **full stack engineer with strong interest in blockchain**. .
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
