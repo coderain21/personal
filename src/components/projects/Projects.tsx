@@ -5,12 +5,13 @@ import { projects, Project } from "./config";
 import { AiFillGithub } from "react-icons/ai"
 import { Skill } from "../skills/config";
 import "./Projects.css";
+import { GITHUB } from "../constants";
 
 const Projects = () => {
   return(
     <div className="bg-projects">
       <p className="heading">Projects</p>
-      <p className="text">Take a look at my blockchain projects:</p>
+      <p className="text">Take a look at my projects:</p>
       <div className="projects-grid">
         {projects.map((project: Project) => {
           return(
@@ -41,22 +42,29 @@ const Projects = () => {
                     )
                   })}
                 </div>
-                <HStack>
-                  <a href={project.github} target="_blank">
-                    <Button size='md' leftIcon={<AiFillGithub />} colorScheme='blue' variant='solid'>GitHub</Button>
-                  </a>
-                  <a href={project.url} target="_blank">
-                    <Button size='md' colorScheme='blue' variant='outline'>Demo</Button>
-                  </a>
+              </div>
+              <div style={{ flexGrow: 1}} />
+                <HStack style={{justifyContent: 'center', margin: '10px'}}>
+                  {
+                    project.github &&
+                    <a href={project.github} target="_blank">
+                      <Button size='md' leftIcon={<AiFillGithub />} colorScheme='blue' variant='solid'>GitHub</Button>
+                    </a>
+                  }
+                  {
+                    project.url &&
+                    <a href={project.url} target="_blank">
+                      <Button size='md' colorScheme='blue' variant='outline'>Visit</Button>
+                    </a>
+                  }
                 </HStack>
               </div>
-            </div>
           )
         })}
       </div>
       <div>
         <p className="git-hub-text">You can find my other projects on my GitHub</p>
-        <a href="https://github.com/0xTijan?tab=repositories" target="_blank">
+        <a href={`${GITHUB}?tab=repositories`} target="_blank">
           <button className="git-hub-btn">GitHub</button>
         </a>
       </div>

@@ -1,0 +1,13 @@
+export const NAME = 'William H';
+export const TITLE = 'Senior Software Engineer';
+export const LOCATION = 'New York';
+export const TIME_ZONE = 'UTC-4'
+export const EMAIL = 'dreamlful.future.10@gmail.com'
+export const EXPERIENCE = 10;
+export const STACK = 'WEB and MOBILE development';
+export const GITHUB = 'https://github.com/happydev521';
+export const DISCORD = '';
+export const LINKEDIN = '';
+export const TELEGRAM = '';
+export const FACEBOOK = '';
+export const TWITTER = '';

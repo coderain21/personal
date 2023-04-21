@@ -1,21 +1,19 @@
-import React, { useEffect, useRef, useState } from "react";
-import { v4 as uuidv4 } from 'uuid';
+import React from "react";
 import SwiperCore, { Pagination, EffectCoverflow } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import block from "./images/bb101-1.png";
 import bit from "./images/bsc.png";
-import beg from "./images/cfb-1.png";
-import defi from "./images/defi1.png";
-import dapp from "./images/ed1.png";
-import eth from "./images/eth1.png";
+import jsfb from "./images/jsfb.png";
+import ad from "./images/ad.png";
+// import all from "./images/all.png";
+import be from "./images/be.png";
+import fe from "./images/fe.png";
+import gcl from "./images/gcl.png";
+import ios from "./images/ios.png";
 import js from "./images/js.png";
-import link from "./images/link.png";
-import dot from "./images/polkadot.png";
+import ts from "./images/ts.png";
 import react from "./images/react.png";
-import contract1 from "./images/sc1.png";
-import contract2 from "./images/sc2.png";
-import security from "./images/scs.png";
 
 import "swiper/css";
 import "swiper/css/effect-coverflow";
@@ -29,7 +27,7 @@ const Certificates = () => {
   return(
     <div className="bg-certificats">
       <p className="heading">Certificates</p>
-      <p className="text">My certificates from one of the biggest blockchain academies - Moralis Academy.</p>
+      <p className="text">My certificates</p>
 
       <div className="slideshow">
         <Swiper
@@ -51,19 +49,28 @@ const Certificates = () => {
           }}
         >
           <SwiperSlide>
-            <img src={contract2} alt="Certificate" className="certificate-img" />
+            <img src={js} alt="Certificate" className="certificate-img" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={js} alt="Certificate" className="certificate-img" />
+            <img src={ts} alt="Certificate" className="certificate-img" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={ad} alt="Certificate" className="certificate-img" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={fe} alt="Certificate" className="certificate-img" />
           </SwiperSlide>
           <SwiperSlide>
             <img src={react} alt="Certificate" className="certificate-img" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={link} alt="Certificate" className="certificate-img" />
+            <img src={gcl} alt="Certificate" className="certificate-img" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={dapp} alt="Certificate" className="certificate-img" />
+            <img src={be} alt="Certificate" className="certificate-img" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={ios} alt="Certificate" className="certificate-img" />
           </SwiperSlide>
           <SwiperSlide>
             <img src={block} alt="Certificate" className="certificate-img" />
@@ -72,22 +79,7 @@ const Certificates = () => {
             <img src={bit} alt="Certificate" className="certificate-img" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={beg} alt="Certificate" className="certificate-img" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={defi} alt="Certificate" className="certificate-img" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={dot} alt="Certificate" className="certificate-img" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={eth} alt="Certificate" className="certificate-img" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={contract1} alt="Certificate" className="certificate-img" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={security} alt="Certificate" className="certificate-img" />
+            <img src={jsfb} alt="Certificate" className="certificate-img" />
           </SwiperSlide>
         </Swiper>
       </div>

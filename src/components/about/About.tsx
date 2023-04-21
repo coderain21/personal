@@ -5,7 +5,8 @@ import { BsTelegram, BsChevronDown } from "react-icons/bs";
 import { FaDiscord  } from "react-icons/fa";
 import avatar from "./../../images/hi.png";
 import "./About.css";
-
+import { EXPERIENCE, GITHUB, LOCATION, NAME, STACK, TELEGRAM, TITLE, TWITTER } from "../constants";
+import { EMAIL } from "../constants";
 
 const About = () => {
   
@@ -30,7 +31,9 @@ const About = () => {
     if(isVisible) {
       return(
         <div className="alert">
-          <Heading as="h3" size={getAlertSize()}>💻{"   "}<a href="mailto:contactme@tijan.dev" className="contact-link">Hire Me!</a></Heading>
+          <Heading as="h3" size={getAlertSize()}>💻{"   "}
+            <a href={`mailto:${EMAIL}`} className="contact-link">Hire Me!</a>
+          </Heading>
           <CloseButton size='lg' className="close-btn" onClick={() => hide()} />
         </div>
       )
@@ -50,40 +53,40 @@ const About = () => {
               Hi! 👋
             </Heading>
             <Heading as='h1' fontSize={getFontSize()} size='4xl'>
-              I'm <span className="name">Tijan</span>
+              I'm <span className="name">{NAME}</span>
             </Heading>
           </div>
           <div className="about-text-desc">
-            <Text fontSize='3xl'>passionate <span className="name">BLOCKCHAIN DEVELOPER</span> from Slovenia with almost 2 years of experience in blockchain development, enthusiastic about blockchain and web3 industry, looking forward to learn something new every day and contribute to the industry!</Text>
+            <Text fontSize='3xl'>Passionate <span className="name">{TITLE}</span> from {LOCATION} with {EXPERIENCE} years of experience in {STACK}, enthusiastic about blockchain and web3 industry, looking forward to learn something new every day and contribute to the industry!</Text>
           </div>
 
           <div className="icons">
-            <a href="https://github.com/0xTijan" target="_blank">
+            <a href={GITHUB} target="_blank">
               <AiFillGithub className="icon" />
             </a>
-            <a href="https://twitter.com/0xTijan" target="_blank">
+            <a href={TWITTER} target="_blank">
               <AiFillTwitterCircle className="icon" />
             </a>
-            <a href="https://t.me/TijanWeb3" target="_blank">
+            <a href={TELEGRAM} target="_blank">
               <BsTelegram className="icon" />
             </a>
           </div>
 
-          <a href="mailto:contactme@tijan.dev">
+          <a href={`mailto:${EMAIL}`}>
             <Button size='lg' rightIcon={<AiOutlineArrowRight />} colorScheme="blue" variant='solid'>
               Contact Me
             </Button>
           </a>
         </div>
         <div className="about-avatar">
-          <img src={avatar} className="avatar" alt="Tijan Bitmoji" />
+          <img src={avatar} className="avatar" alt="my avatar" />
         </div>
       </div>
-      <div className="icon-wrapper">
+      {/* <div className="icon-wrapper">
         <div className="bottom-icon">
           <BsChevronDown />
         </div>
-      </div>
+      </div> */}
     </div>
     </>
   )  

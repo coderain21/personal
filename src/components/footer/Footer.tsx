@@ -1,4 +1,5 @@
 import React from "react";
+import { NAME } from "../constants";
 import "./Footer.css";
 
 const Footer = () => {
@@ -7,7 +8,7 @@ const Footer = () => {
 
   return(
     <div className="bg-footer">
-      <p className="footer-text">&copy; Copyright {year}, Tijan Nartnik</p>
+      <p className="footer-text">&copy; Copyright {year}, {NAME}</p>
     </div>
   )
 }

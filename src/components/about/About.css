@@ -54,6 +54,7 @@
 .name {
   color: var(--text-secondary);
   font-weight: 800;
+  cursor: pointer;
 }
 
 .icons {

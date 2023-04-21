@@ -1,13 +1,13 @@
 import React from "react";
 import { Button } from "@chakra-ui/react";
-import { GrLocation } from "react-icons/gr";
 import { MdOutlineEmail } from "react-icons/md";
-import { AiFillGithub, AiFillTwitterCircle, AiOutlineArrowRight } from "react-icons/ai";
-import { BsTelegram, BsGlobe2 } from "react-icons/bs";
+import { AiFillGithub, AiOutlineArrowRight } from "react-icons/ai";
+// import { BsTelegram, BsGlobe2 } from "react-icons/bs";
 import { IoLocationOutline } from "react-icons/io5";
 import { FaDiscord } from "react-icons/fa";
 import { v4 as uuidv4 } from 'uuid';
 import "./Contact.css";
+import { DISCORD, EMAIL, GITHUB, LOCATION, TIME_ZONE } from "../constants";
 
 export type Contact = {
   name: string,
@@ -19,43 +19,43 @@ export type Contact = {
 export const contacts: Contact[] = [
   {
     name: "EMAIL:",
-    info: "contactme@tijan.dev",
+    info: EMAIL,
     icon: <MdOutlineEmail className="contact-icon" />,
-    url: "mailto:contactme@tijan.dev",
+    url: `mailto:${EMAIL}`,
   },
-  {
-    name: "TWITTER:",
-    info: "@0xTijan",
-    icon: <AiFillTwitterCircle className="contact-icon" />,
-    url: "https://twitter.com/0xTijan",
-  },
-  {
-    name: "TELEGRAM:",
-    info: "@TijanWeb3",
-    icon: <BsTelegram className="contact-icon" />,
-    url: "https://t.me/TijanWeb3",
-  },
+  // {
+  //   name: "TWITTER:",
+  //   info: "",
+  //   icon: <AiFillTwitterCircle className="contact-icon" />,
+  //   url: "",
+  // },
+  // {
+  //   name: "TELEGRAM:",
+  //   info: "",
+  //   icon: <BsTelegram className="contact-icon" />,
+  //   url: "",
+  // },
   {
     name: "DISCORD:",
-    info: "Tijan#6804",
+    info: "CodeRain",
     icon: <FaDiscord className="contact-icon" />,
-    url: "https://discord.com/users/775249998379614238",
+    url: DISCORD,
   },
   {
     name: "GitHub:",
-    info: "@0xTijan",
+    info: "",
     icon: <AiFillGithub className="contact-icon" />,
-    url: "https://github.com/0xTijan",
+    url: GITHUB,
   },
   {
     name: "LOCATION & ZONE:",
-    info: "Slovenia, UTC+1",
+    info: `${LOCATION}, ${TIME_ZONE}`,
     icon: <IoLocationOutline className="contact-icon" />,
     url: "https://www.timeanddate.com/time/zone/slovenia",
   },
 ];
 
-const Contact = () => {
+const ContactContainer = () => {
   return(
     <div className="bg-contact">
       <div className="contact-header">
@@ -80,7 +80,7 @@ const Contact = () => {
       </div>
 
       <div className="button-container">
-        <a href="mailto:contactme@tijan.dev">
+        <a href={`mailto:${EMAIL}`}>
           <Button size='lg' rightIcon={<AiOutlineArrowRight />} colorScheme="blue" variant='solid' className="contact-btn">
             Contact Me
           </Button>
@@ -90,4 +90,4 @@ const Contact = () => {
   )
 }
 
-export default Contact;
+export default ContactContainer;
