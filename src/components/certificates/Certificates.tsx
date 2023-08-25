@@ -6,7 +6,6 @@ import block from "./images/bb101-1.png";
 import bit from "./images/bsc.png";
 import jsfb from "./images/jsfb.png";
 import ad from "./images/ad.png";
-// import all from "./images/all.png";
 import be from "./images/be.png";
 import fe from "./images/fe.png";
 import gcl from "./images/gcl.png";
@@ -20,14 +19,12 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "./Certificates.css";
 
-
 SwiperCore.use([Pagination, EffectCoverflow]);
 
 const Certificates = () => {
   return(
     <div className="bg-certificats">
       <p className="heading">Certificates</p>
-      <p className="text">My certificates</p>
 
       <div className="slideshow">
         <Swiper

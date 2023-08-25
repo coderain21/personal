@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Heading, Text, Button, CloseButton } from '@chakra-ui/react';
 import { AiFillGithub, AiFillTwitterCircle, AiOutlineArrowRight } from "react-icons/ai";
 import { BsTelegram, BsChevronDown } from "react-icons/bs";
-import { FaDiscord  } from "react-icons/fa";
+// import { FaDiscord  } from "react-icons/fa";
 import avatar from "./../../images/hi.png";
 import "./About.css";
 import { EXPERIENCE, GITHUB, LOCATION, NAME, STACK, TELEGRAM, TITLE, TWITTER } from "../constants";

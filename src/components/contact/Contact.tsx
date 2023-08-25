@@ -13,7 +13,7 @@ export type Contact = {
   name: string,
   info: string,
   icon: React.ReactElement,
-  url: string,
+  url?: string,
 }
 
 export const contacts: Contact[] = [
@@ -43,7 +43,7 @@ export const contacts: Contact[] = [
   },
   {
     name: "GitHub:",
-    info: "",
+    info: "HappyDEV",
     icon: <AiFillGithub className="contact-icon" />,
     url: GITHUB,
   },
@@ -51,7 +51,6 @@ export const contacts: Contact[] = [
     name: "LOCATION & ZONE:",
     info: `${LOCATION}, ${TIME_ZONE}`,
     icon: <IoLocationOutline className="contact-icon" />,
-    url: "https://www.timeanddate.com/time/zone/slovenia",
   },
 ];
 
@@ -66,7 +65,7 @@ const ContactContainer = () => {
       <div className="contact-grid">
         {contacts.map((contact: Contact) => {
           return(
-            <a key={uuidv4()} href={contact.url} target="_blank">
+            <a key={uuidv4()} href={contact.url} target="_blank" style={{cursor: 'pointer'}}>
               <div className="contact-section">
                   {contact.icon}
                   <div className="contact-text-div">

@@ -11,7 +11,7 @@ For this project I used:
 - [TypeScript](https://www.typescriptlang.org/) and [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 
 ## About Me
-Hi! 👋 I'm Code rain, passionate **full stack engineer with strong interest in blockchain**. .
+Hi! 👋 I'm Code rain, passionate **full stack engineer with strong interest in blockchain**.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)

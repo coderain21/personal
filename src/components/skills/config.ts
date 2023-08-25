@@ -39,6 +39,8 @@ import MongoDB from '../../images/stack/mongodb.png';
 import Redis from '../../images/stack/redis.png';
 import Express from '../../images/stack/express.png';
 import Redux from '../../images/stack/redux.png';
+import Zustand from '../../images/stack/zustand.png';
+import Effector from '../../images/stack/effector.jpg';
 // ui framework
 import Mui from '../../images/stack/mui.png';
 import AntD from '../../images/stack/antd.png';
@@ -111,6 +113,16 @@ export const skills: Skill[] = [
     name: "Redux",
     url: "https://redux.js.org/",
     img: Redux,
+  },
+  {
+    name: "Zustand",
+    url: "https://github.com/pmndrs/zustand",
+    img: Zustand,
+  },
+  {
+    name: "Effector",
+    url: "https://effector.dev/",
+    img: Effector
   },
   {
     name: "React Native",
