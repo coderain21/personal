@@ -1,11 +1,9 @@
 import { useState } from "react";
 import { Heading, Text, Button, CloseButton } from '@chakra-ui/react';
-import { AiFillGithub, AiFillTwitterCircle, AiOutlineArrowRight } from "react-icons/ai";
-import { BsTelegram, BsChevronDown } from "react-icons/bs";
-// import { FaDiscord  } from "react-icons/fa";
+import { AiFillGithub, AiOutlineArrowRight, AiFillLinkedin } from "react-icons/ai";
 import avatar from "./../../images/hi.png";
 import "./About.css";
-import { EXPERIENCE, GITHUB, LOCATION, NAME, STACK, TELEGRAM, TITLE, TWITTER } from "../constants";
+import { EXPERIENCE, GITHUB, LINKEDIN, LOCATION, NAME, STACK, TITLE } from "../constants";
 import { EMAIL } from "../constants";
 
 const About = () => {
@@ -64,12 +62,15 @@ const About = () => {
             <a href={GITHUB} target="_blank">
               <AiFillGithub className="icon" />
             </a>
-            <a href={TWITTER} target="_blank">
+            <a href={LINKEDIN} target="_blank">
+              <AiFillLinkedin className="icon" />
+            </a>
+            {/* <a href={TWITTER} target="_blank">
               <AiFillTwitterCircle className="icon" />
             </a>
             <a href={TELEGRAM} target="_blank">
               <BsTelegram className="icon" />
-            </a>
+            </a> */}
           </div>
 
           <a href={`mailto:${EMAIL}`}>
